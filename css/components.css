@@ -1,55 +1,66 @@
 .avatar {
-  width: 180px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  width: 180px; /* Lebar avatar */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  margin-bottom: 20px; /* Jarak bawah dari elemen berikutnya */
 }
 
 .about-card {
-  background: var(--glass);
-  padding: 20px;
-  border-radius: var(--radius);
+  background: var(
+    --ocean-deep
+  ); /* Background solid dengan warna dari variable (tema laut) */
+  padding: 20px; /* Spasi dalam card */
+  border-radius: var(
+    --radius
+  ); /* Sudut membulat konsisten sesuai variable global */
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
-  width: 80%;
+  display: grid; /* Menggunakan CSS Grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(140px, 1fr)
+  ); /* Kolom otomatis responsif min 140px */
+  gap: 20px; /* Jarak antar card */
+  width: 80%; /* Lebar grid 80% dari parent */
 }
 
-.skill {
-  background: var(--glass);
-  padding: 20px;
-  text-align: center;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: 0.3s;
+.skill-card {
+  background: var(--glass); /* Background glass style */
+  padding: 20px; /* Spasi dalam */
+  text-align: center; /* Teks rata tengah */
+  border-radius: var(--radius); /* Sudut membulat */
+  cursor: pointer; /* Cursor berubah saat hover (indikasi interaktif) */
+  transition: 0.3s; /* Animasi halus saat ada perubahan */
 }
 
-.skill:hover {
-  transform: translateY(-5px);
+.skill-card:hover {
+  transform: translateY(-5px); /* Efek card naik 5px saat hover */
 }
 
 .project-table {
-  width: 80%;
-  border-collapse: collapse;
+  width: 80%; /* Lebar tabel 80% dari container */
+  border-collapse: collapse; /* Menggabungkan border agar tidak double */
 }
 
 .project-table th,
 .project-table td {
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px; /* Spasi dalam sel */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Border tipis transparan */
 }
 
 .achievement-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  width: 80%;
+  display: grid; /* Layout grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Kolom responsif min 200px */
+  gap: 20px; /* Jarak antar item */
+  width: 80%; /* Lebar 80% dari parent */
 }
 
 .achievement {
-  background: var(--glass);
-  padding: 20px;
-  border-radius: var(--radius);
+  background: var(--glass); /* Background glass */
+  padding: 20px; /* Spasi dalam */
+  border-radius: var(--radius); /* Sudut membulat */
 }
+

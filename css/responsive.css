@@ -1,31 +1,33 @@
 @media (max-width: 900px) {
+  /* Aturan berlaku jika lebar layar ≤ 900px (tablet landscape & kecil) */
+
   .about-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Ubah menjadi 1 kolom agar lebih nyaman di layar kecil */
   }
 
   .skills-grid {
-    width: 100%;
+    width: 100%; /* Grid skill full lebar agar tidak sempit */
   }
 
   .project-table {
-    width: 100%;
+    width: 100%; /* Tabel project full lebar di layar kecil */
   }
 
   .nav-menu {
-    gap: 15px;
+    gap: 15px; /* Kurangi jarak antar menu agar tidak terlalu lebar */
   }
 }
 
 @media (max-width: 768px) {
-  .hud-panel {
-    padding: 40px 20px;
-  }
+  /* Aturan untuk tablet portrait & mobile */
 
-  .skill-card {
-    padding: 20px;
-  }
+  /* .hud-panel {
+    padding: 40px 20px; /* Kurangi padding agar lebih proporsional di layar kecil */
+}
+*/ .skill-card {
+  padding: 20px; /* Menjaga spacing tetap nyaman disentuh (touch-friendly) */
+}
 
-  .section-title {
-    font-size: 1.8rem;
-  }
+.section-title {
+  font-size: 1.8rem; /* Mengecilkan ukuran judul agar tidak terlalu besar di mobile */
 }

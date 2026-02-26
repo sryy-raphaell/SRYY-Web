@@ -1,65 +1,79 @@
 .skills-section {
-  padding: 120px 10%;
-  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-  color: white;
-  position: relative;
-  overflow: hidden;
+  padding: 120px 10%; /* Spasi atas-bawah 120px, kiri-kanan 10% (responsive spacing) */
+  background: linear-gradient(
+    to bottom,
+    #0f2027,
+    #203a43,
+    #2c5364
+  ); /* Gradasi gelap futuristik */
+  color: white; /* Warna teks default putih */
+  position: relative; /* Agar elemen absolut di dalamnya punya referensi */
+  overflow: visible; /* Mencegah elemen keluar dari batas section */
 }
 
 .section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 60px;
-  letter-spacing: 2px;
+  text-align: center; /* Judul rata tengah */
+  font-size: 2.5rem; /* Ukuran relatif agar scalable */
+  margin-bottom: 60px; /* Jarak ke elemen bawah */
+  letter-spacing: 2px; /* Spasi antar huruf untuk efek elegan */
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  display: grid; /* Menggunakan CSS Grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 300px)
+  ); /* Kolom responsif min 280px */
+  gap: 25px; /* Jarak antar card */
+  justify-content: center; /* Pusatkan grid jika ada ruang ekstra */
+  max-width: 1200px;
+  margin: 0 auto; /* Pusatkan grid secara horizontal */
 }
 
 .skill-card {
-  padding: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  cursor: pointer;
-  transition: 0.4s;
-  border-radius: 12px;
+  padding: 25px; /* Spasi dalam card */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Border tipis transparan */
+  background: rgba(255, 255, 255, 0.05); /* Background semi transparan */
+  backdrop-filter: blur(8px); /* Efek glass blur (glassmorphism) */
+  cursor: pointer; /* Menandakan elemen interaktif */
+  transition: 0.4s; /* Animasi halus saat hover */
+  border-radius: 12px; /* Sudut membulat */
 }
 
 .skill-card:hover {
-  transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  transform: translateY(-10px); /* Efek naik saat hover */
+  background: rgba(255, 255, 255, 0.1); /* Background sedikit lebih terang */
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3); /* Glow effect cyan futuristik */
 }
 
-/* Detail Box */
+/* ================= DETAIL BOX ================= */
 
 .skill-detail {
-  position: fixed;
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-  background: #111;
-  padding: 40px 10%;
-  transition: 0.6s;
-  z-index: 999;
+  position: fixed; /* Tetap terhadap viewport */
+  bottom:-100% ; /* Disembunyikan di luar layar (slide dari bawah) */
+  left: 0; /* Mulai dari sisi kiri */
+  width: 100%; /* Lebar penuh */
+  background: #111; /* Background gelap */
+  padding: 40px 10%; /* Spasi dalam */
+  transition: 0.6s; /* Animasi slide */
+  z-index: 999; /* Layer tinggi agar di atas konten */
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.6);
 }
 
 .skill-detail.active {
-  bottom: 0;
+  bottom: 0; /* Muncul ke layar saat class active ditambahkan */
 }
 
 .detail-content h3 {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
+  margin-bottom: 15px; /* Jarak bawah judul */
+  font-size: 1.8rem; /* Ukuran heading detail */
 }
 
 .detail-content p {
-  margin: 10px 0;
-  line-height: 1.6;
+  margin: 10px 0; /* Spasi antar paragraf */
+  line-height: 1.6; /* Jarak antar baris agar nyaman dibaca */
 }
 
-
+body.detail-open {
+  overflow: hidden;
+}

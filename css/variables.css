@@ -1,21 +1,23 @@
 :root {
-  --sky-top: #7ec8ff;
-  --sky-bottom: #ffa7a7;
+  /* Root selector untuk menyimpan CSS global variables */
 
-  --ocean-light: #5fd3ff;
-  --ocean-deep: #1b6ca8;
+  --sky-top: #7ec8ff; /* Warna atas gradasi langit */
+  --sky-bottom: #ffa7a7; /* Warna bawah gradasi langit */
 
-  --river: #2f7a4d;
+  --ocean-light: #033c52; /* Warna laut bagian terang */
+  --ocean-deep: #1b6ca8; /* Warna laut bagian dalam */
 
-  --forest: #163d2b;
+  --river: #2f7a4d; /* Warna solid sungai */
 
-  --mountain: #2c3e50;
+  --forest: #163d2b; /* Warna tema hutan */
 
-  --core: #111;
+  --mountain: #2c3e50; /* Warna tema pegunungan */
 
-  --text: #ffffff;
+  --core: #111; /* Warna inti/footer (gelap) */
 
-  --glass: rgba(255, 255, 255, 0.1);
+  --text: #ffffff; /* Warna teks utama */
 
-  --radius: 12px;
+  --glass: rgba(255, 255, 255, 0.1); /* Warna background efek glassmorphism */
+
+  --radius: 12px; /* Border radius global untuk konsistensi sudut */
 }

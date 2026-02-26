@@ -1,178 +1,254 @@
 <!doctype html>
+<!-- Mendefinisikan dokumen sebagai HTML5 -->
 <html lang="en">
+  <!-- Root HTML dengan bahasa English -->
   <head>
     <meta charset="UTF-8" />
+    <!-- Encoding karakter UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive agar sesuai ukuran device -->
 
     <title>SRYY — Living Technology Ecosystem</title>
+    <!-- Judul halaman di tab browser -->
 
+    <!-- Import file CSS modular -->
     <link rel="stylesheet" href="css/variables.css" />
+    <!-- Variabel global CSS (warna, font, dll) -->
     <link rel="stylesheet" href="css/base.css" />
+    <!-- Styling dasar/reset -->
     <link rel="stylesheet" href="css/layout.css" />
+    <!-- Struktur layout utama -->
     <link rel="stylesheet" href="css/components.css" />
+    <!-- Komponen seperti card, button -->
     <link rel="stylesheet" href="css/animations.css" />
+    <!-- Animasi visual -->
     <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Media query responsive -->
     <link rel="stylesheet" href="css/skills.css" />
+    <!-- Styling khusus section skills -->
   </head>
 
   <body>
+    <!-- ================= NAVIGATION BAR ================= -->
     <header class="navbar">
+      <!-- Container navbar utama -->
       <div class="logo">SRYY</div>
+      <!-- Logo atau brand name -->
 
       <nav>
+        <!-- Navigasi utama -->
         <ul class="nav-menu">
+          <!-- List menu navigasi -->
           <li><a href="#home">Home</a></li>
+          <!-- Link ke section home -->
           <li><a href="#about">About</a></li>
+          <!-- Link ke section about -->
           <li><a href="#skills">Skill</a></li>
+          <!-- Link ke section skills -->
           <li><a href="#projects">Project</a></li>
+          <!-- Link ke section project -->
           <li><a href="#achievements">Achievement</a></li>
+          <!-- Link ke achievement -->
           <li><a href="#contact">Contact</a></li>
+          <!-- Link ke contact/footer -->
         </ul>
       </nav>
     </header>
 
-    <!-- HOME -->
+    <!-- ================= HOME SECTION ================= -->
     <section id="home" class="section sky">
-      <img src="assets/clouds/cloud-left.png" class="cloud cloud-left" />
-      <img src="assets/clouds/cloud-right.png" class="cloud cloud-right" />
-
-      <div class="home-center">
-        <h1 id="helloText">Hello World</h1>
-        <p class="tagline">Technology living quietly in nature</p>
+      <div class="sky-overlay">
+        <!-- Section home dengan tema sky -->
+        <img src="assets/clouds/cloud-left.png" class="cloud cloud-left" />
+        <!-- Gambar awan kiri -->
+        <img src="assets/clouds/cloud-right.png" class="cloud cloud-right" />
+        <!-- Gambar awan kanan -->
+        
+        <div class="home-center">
+          <!-- Container teks utama di tengah -->
+          <h1 id="helloText">Hello World</h1>
+          <!-- Judul utama (dinamis via JS) -->
+          <p class="tagline">Technology living quietly in nature</p>
+          <!-- Subtitle/tagline -->
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ================= ABOUT SECTION ================= -->
     <section id="about" class="section ocean">
+      <!-- Section about dengan tema ocean -->
       <div class="about-container">
+        <!-- Container utama about -->
         <img src="assets/avatar/avatar.png" class="avatar" />
+        <!-- Foto/avatar profil -->
 
         <div class="about-grid">
+          <!-- Grid layout untuk card about -->
+
           <div class="about-card">
+            <!-- Card informasi 1 -->
             <h3>Current Mission</h3>
             <p>Membangun sistem kehidupan mandiri berbasis teknologi.</p>
           </div>
 
           <div class="about-card">
+            <!-- Card informasi 2 -->
             <h3>Future Goal</h3>
             <p>Menciptakan ekosistem teknologi yang hidup bersama alam.</p>
           </div>
 
           <div class="about-card">
+            <!-- Card informasi 3 -->
             <h3>Tech Interest</h3>
             <p>IoT, Robotics, Automation, Sustainable Tech.</p>
           </div>
 
           <div class="about-card">
+            <!-- Card informasi 4 -->
             <h3>Vision</h3>
             <p>Technology should grow like nature.</p>
           </div>
 
           <div class="about-card">
+            <!-- Card informasi 5 -->
             <h3>About Me</h3>
             <p>Just an Ordinary student, nothing special.</p>
+            <p></p>
           </div>
 
           <div class="about-card">
+            <!-- Card identitas -->
             <h3>Identity</h3>
-            <ul>
               <p>Nama : Rafael Tirtha Ramadhan</p>
-              <p>NIM  : 25343077</p>
+              <p>NIM : 25343077</p>
               <p>Prodi: Informatika</p>
-              <p>Uni  : Universitas Negeri Padang</p>
-            </ul>
-
+              <p>Uni : Universitas Negeri Padang</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-<section class="skills-section" id="skills">
-  <div class="skills-container">
-    <h2 class="section-title">Engineering Expertise</h2>
+    <!-- ================= SKILLS SECTION ================= -->
+    <section class="skills-section" id="skills">
+      <!-- Section skill interaktif -->
+      <div class="skills-container">
+        <!-- Container utama skill -->
+        <h2 class="section-title">Engineering Expertise</h2>
+        <!-- Judul section -->
 
-    <div class="skills-grid">
+        <div class="skills-grid">
+          <!-- Grid card skill -->
 
-      <div class="skill-card" data-skill="embedded">
-        Embedded Systems & IoT Engineering
+          <div class="skill-card" data-skill="embedded">
+            <!-- Skill dengan identifier embedded -->
+            Embedded Systems & IoT Engineering
+          </div>
+
+          <div class="skill-card" data-skill="software">
+            <!-- Skill software -->
+            Software Engineering & Web Development
+          </div>
+
+          <div class="skill-card" data-skill="robotics">
+            <!-- Skill robotics -->
+            Robotics & Mechatronics Engineering
+          </div>
+
+          <div class="skill-card" data-skill="game">
+            <!-- Skill game dev -->
+            Game Development & Interactive Technology
+          </div>
+
+          <div class="skill-card" data-skill="cyber">
+            <!-- Skill cybersecurity -->
+            Cybersecurity & Network Engineering
+          </div>
+
+          <div class="skill-card" data-skill="product">
+            <!-- Skill product engineering -->
+            Product Engineering / Tech Innovator
+          </div>
+        </div>
       </div>
 
-      <div class="skill-card" data-skill="software">
-        Software Engineering & Web Development
+      <!-- Detail Box (Dynamic via JS) -->
+      <div class="skill-detail" id="skillDetail">
+        <!-- Popup detail skill -->
+        <div class="detail-content">
+          <!-- Konten detail -->
+          <h3 id="detailTitle"></h3>
+          <!-- Judul skill dinamis -->
+          <p>
+            <strong>Languages & Tools:</strong> <span id="detailTech"></span>
+          </p>
+          <!-- Teknologi -->
+          <p><strong>Status:</strong> <span id="detailStatus"></span></p>
+          <!-- Status -->
+          <p>
+            <strong>Project Roadmap:</strong> <span id="detailProject"></span>
+          </p>
+          <!-- Roadmap -->
+        </div>
       </div>
+    </section>
 
-      <div class="skill-card" data-skill="robotics">
-        Robotics & Mechatronics Engineering
-      </div>
+    <script src="js/skills.js"></script>
+    <!-- Script interaksi skill -->
 
-      <div class="skill-card" data-skill="game">
-        Game Development & Interactive Technology
-      </div>
-
-      <div class="skill-card" data-skill="cyber">
-        Cybersecurity & Network Engineering
-      </div>
-
-      <div class="skill-card" data-skill="product">
-        Product Engineering / Tech Innovator
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Detail Box -->
-  <div class="skill-detail" id="skillDetail">
-    <div class="detail-content">
-      <h3 id="detailTitle"></h3>
-      <p><strong>Languages & Tools:</strong> <span id="detailTech"></span></p>
-      <p><strong>Status:</strong> <span id="detailStatus"></span></p>
-      <p><strong>Project Roadmap:</strong> <span id="detailProject"></span></p>
-    </div>
-  </div>
-
-</section>
-
-<script src="js/skills.js"></script>
-
-    <!-- PROJECT -->
+    <!-- ================= PROJECT SECTION ================= -->
     <section id="projects" class="section forest">
+      <!-- Section project -->
       <h2 class="section-title">Projects</h2>
 
       <table class="project-table">
+        <!-- Tabel daftar project -->
         <thead>
           <tr>
             <th>Project</th>
+            <!-- Kolom nama project -->
             <th>Type</th>
+            <!-- Jenis project -->
             <th>Status</th>
+            <!-- Status pengerjaan -->
             <th>Year</th>
+            <!-- Tahun -->
           </tr>
         </thead>
 
         <tbody id="projectTable"></tbody>
+        <!-- Data akan diisi JS -->
       </table>
     </section>
 
-    <!-- ACHIEVEMENT -->
+    <!-- ================= ACHIEVEMENT SECTION ================= -->
     <section id="achievements" class="section mountain">
+      <!-- Section achievement -->
       <h2 class="section-title">Achievements</h2>
 
       <div class="achievement-grid">
+        <!-- Grid pencapaian -->
         <div class="achievement">First IoT System</div>
         <div class="achievement">Hardware Prototype</div>
         <div class="achievement">Automation Project</div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ================= CONTACT / FOOTER ================= -->
     <footer id="contact" class="section core">
+      <!-- Footer sebagai contact -->
       <h2>Contact</h2>
       <p>GitHub (link nanti)</p>
+      <!-- Placeholder link GitHub -->
     </footer>
 
+    <!-- ================= JAVASCRIPT FILES ================= -->
     <script src="js/app.js"></script>
+    <!-- Script utama -->
     <script src="js/parallax.js"></script>
+    <!-- Efek parallax -->
     <script src="js/hello.js"></script>
+    <!-- Animasi teks Hello -->
     <script src="js/projects.js"></script>
+    <!-- Generate tabel project -->
   </body>
 </html>

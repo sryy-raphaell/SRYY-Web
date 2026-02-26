@@ -1,39 +1,64 @@
 .sky {
-  background: linear-gradient(var(--sky-top), var(--sky-bottom));
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #4a6fa5 0%,
+    #6c5b7b 35%,
+    #2b2e4a 70%,
+    #0f2027 100%
+  );
+  position: relative;
+  overflow: hidden;
 }
 
 .ocean {
-  background: linear-gradient(var(--ocean-light), var(--ocean-deep));
+  background: linear-gradient(
+    var(--ocean-light),
+    var(--ocean-deep)
+  ); /* Gradasi warna laut dari terang ke dalam */
 }
 
 .river {
-  background: var(--river);
+  background: var(--river); /* Warna solid sungai dari variable */
 }
 
 .forest {
-  background: var(--forest);
+  background: var(--forest); /* Warna solid tema hutan */
 }
 
 .mountain {
-  background: var(--mountain);
+  background: var(--mountain); /* Warna solid tema pegunungan */
 }
 
 .core {
-  background: var(--core);
+  background: var(--core); /* Warna bagian inti / footer */
 }
 
 .cloud {
-  position: absolute;
-  width: 320px;
-  opacity: 0.9;
+  position: absolute; /* Posisi bebas relatif terhadap parent yang position: relative */
+  width: 320px; /* Lebar gambar awan */
+  opacity: 0.9; /* Transparansi sedikit agar terlihat natural */
 }
 
 .cloud-left {
-  left: 0;
-  top: 120px;
+  left: 0; /* Menempel ke sisi kiri layar */
+  top: 120px; /* Jarak dari atas */
 }
 
 .cloud-right {
-  right: 0;
-  top: 150px;
+  right: 0; /* Menempel ke sisi kanan layar */
+  top: 150px; /* Jarak dari atas (dibedakan agar tidak simetris sempurna) */
+}
+
+.sky-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+  top: 0;
+  left: 0;
 }
