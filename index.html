@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SRYY — Living Technology Ecosystem</title>
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">SRYY</div>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#achievements">Achievement</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="section sky">
+      <img src="assets/clouds/cloud-left.png" class="cloud cloud-left" />
+      <img src="assets/clouds/cloud-right.png" class="cloud cloud-right" />
+
+      <div class="home-center">
+        <h1 id="helloText">Hello World</h1>
+        <p class="tagline">Technology living quietly in nature</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section ocean">
+      <div class="about-container">
+        <img src="assets/avatar/avatar.png" class="avatar" />
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Current Mission</h3>
+            <p>Membangun sistem kehidupan mandiri berbasis teknologi.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Future Goal</h3>
+            <p>Menciptakan ekosistem teknologi yang hidup bersama alam.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Tech Interest</h3>
+            <p>IoT, Robotics, Automation, Sustainable Tech.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Vision</h3>
+            <p>Technology should grow like nature.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>About Me</h3>
+            <p>Just an Ordinary student, nothing special.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Identity</h3>
+            <ul>
+              <p>Nama : Rafael Tirtha Ramadhan</p>
+              <p>NIM  : 25343077</p>
+              <p>Prodi: Informatika</p>
+              <p>Uni  : Universitas Negeri Padang</p>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <div class="skills-container">
+    <h2 class="section-title">Engineering Expertise</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card" data-skill="embedded">
+        Embedded Systems & IoT Engineering
+      </div>
+
+      <div class="skill-card" data-skill="software">
+        Software Engineering & Web Development
+      </div>
+
+      <div class="skill-card" data-skill="robotics">
+        Robotics & Mechatronics Engineering
+      </div>
+
+      <div class="skill-card" data-skill="game">
+        Game Development & Interactive Technology
+      </div>
+
+      <div class="skill-card" data-skill="cyber">
+        Cybersecurity & Network Engineering
+      </div>
+
+      <div class="skill-card" data-skill="product">
+        Product Engineering / Tech Innovator
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Detail Box -->
+  <div class="skill-detail" id="skillDetail">
+    <div class="detail-content">
+      <h3 id="detailTitle"></h3>
+      <p><strong>Languages & Tools:</strong> <span id="detailTech"></span></p>
+      <p><strong>Status:</strong> <span id="detailStatus"></span></p>
+      <p><strong>Project Roadmap:</strong> <span id="detailProject"></span></p>
+    </div>
+  </div>
+
+</section>
+
+<script src="js/skills.js"></script>
+
+    <!-- PROJECT -->
+    <section id="projects" class="section forest">
+      <h2 class="section-title">Projects</h2>
+
+      <table class="project-table">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+
+        <tbody id="projectTable"></tbody>
+      </table>
+    </section>
+
+    <!-- ACHIEVEMENT -->
+    <section id="achievements" class="section mountain">
+      <h2 class="section-title">Achievements</h2>
+
+      <div class="achievement-grid">
+        <div class="achievement">First IoT System</div>
+        <div class="achievement">Hardware Prototype</div>
+        <div class="achievement">Automation Project</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact" class="section core">
+      <h2>Contact</h2>
+      <p>GitHub (link nanti)</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/hello.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>

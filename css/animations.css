@@ -1,0 +1,39 @@
+.sky {
+  background: linear-gradient(var(--sky-top), var(--sky-bottom));
+}
+
+.ocean {
+  background: linear-gradient(var(--ocean-light), var(--ocean-deep));
+}
+
+.river {
+  background: var(--river);
+}
+
+.forest {
+  background: var(--forest);
+}
+
+.mountain {
+  background: var(--mountain);
+}
+
+.core {
+  background: var(--core);
+}
+
+.cloud {
+  position: absolute;
+  width: 320px;
+  opacity: 0.9;
+}
+
+.cloud-left {
+  left: 0;
+  top: 120px;
+}
+
+.cloud-right {
+  right: 0;
+  top: 150px;
+}

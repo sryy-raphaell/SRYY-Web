@@ -1,0 +1,55 @@
+.avatar {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-card {
+  background: var(--glass);
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  width: 80%;
+}
+
+.skill {
+  background: var(--glass);
+  padding: 20px;
+  text-align: center;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.project-table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.project-table th,
+.project-table td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 80%;
+}
+
+.achievement {
+  background: var(--glass);
+  padding: 20px;
+  border-radius: var(--radius);
+}

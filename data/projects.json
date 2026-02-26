@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Hydroponic IoT System",
+    "type": "IoT",
+    "status": "Development-pending",
+    "year": "2026"
+  },
+  {
+    "name": "Autonomous Drone",
+    "type": "Robotics",
+    "status": "Research and Learning",
+    "year": "2026"
+  },
+  {
+    "name": "Solar Energy System + Powerbank",
+    "type": "IoT",
+    "status": "pending",
+    "year": "2026"
+  }
+  
+]
