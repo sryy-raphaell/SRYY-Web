@@ -24,10 +24,6 @@
   color: white; /* Warna teks putih */
 }
 
-.home-center {
-  text-align: center; /* Konten di tengah secara horizontal */
-}
-
 .about-container {
   text-align: center; /* Semua teks di dalam rata tengah */
   max-width: 900px; /* Lebar maksimal agar tidak terlalu melebar di layar besar */
