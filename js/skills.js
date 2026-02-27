@@ -30,7 +30,7 @@ const skillsData = {
   software: {
     title: "Software Engineering & Web Development",
     tech: "HTML, CSS, JavaScript, React (Learning), Node.js, Git",
-    status: "Intermediate",
+    status: "Beginner",
     project:
       "SRYY Portfolio Platform, Data Management System, REST API Project",
   },
@@ -38,21 +38,21 @@ const skillsData = {
   robotics: {
     title: "Robotics & Mechatronics Engineering",
     tech: "ROS (Planned), Servo Control, Motor Driver, CAD 3D Design",
-    status: "Developing",
+    status: "Intermediate-Developing",
     project: "Autonomous Drone, Underwater Robot, Smart Actuator System",
   },
 
   game: {
     title: "Game Development & Interactive Technology",
     tech: "Unity, C#, Blender, Game Physics Logic",
-    status: "Developing",
+    status: "Beginner-Developing",
     project: "Indie Exploration Game, Interactive Learning Simulation",
   },
 
   cyber: {
     title: "Cybersecurity & Network Engineering",
     tech: "Linux CLI, Basic Networking, Wireshark, Firewall Config",
-    status: "Beginner–Intermediate",
+    status: "Beginner",
     project:
       "Personal Secure Network Lab, Ethical Hacking Practice Environment",
   },

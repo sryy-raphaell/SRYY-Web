@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
   const scroll = window.scrollY;
   // Menyimpan posisi scroll vertikal saat ini (dalam pixel)
 
-  if (cloudLeft) cloudLeft.style.transform = `translateY(${scroll * -0.2}px)`;
+  if (cloudLeft) cloudLeft.style.transform = `translateY(${scroll * -0.2}px) scaleX(-1)`;
   // Jika elemen ada, geser ke atas dengan kecepatan 0.2x dari scroll (efek parallax)
 
   if (cloudRight)

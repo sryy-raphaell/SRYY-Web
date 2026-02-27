@@ -48,6 +48,25 @@
   border: 1px solid rgba(255, 255, 255, 0.2); /* Border tipis transparan */
 }
 
+.project-preview {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-preview img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.project-table tr {
+  cursor: pointer;
+}
+
 .achievement-grid {
   display: grid; /* Layout grid */
   grid-template-columns: repeat(
@@ -63,4 +82,3 @@
   padding: 20px; /* Spasi dalam */
   border-radius: var(--radius); /* Sudut membulat */
 }
-

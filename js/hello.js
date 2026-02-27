@@ -17,4 +17,4 @@ setInterval(() => {
 
   document.getElementById("helloText").textContent = helloTexts[i];
   // Mengganti isi teks pada elemen dengan id="helloText"
-}, 3000); // Interval 3000ms = 3 detik
+}, 2000); // Interval 2000ms = 2 detik

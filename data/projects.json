@@ -3,19 +3,28 @@
     "name": "Hydroponic IoT System",
     "type": "IoT",
     "status": "Development-pending",
-    "year": "2026"
+    "year": "2026",
+    "image": "None"
   },
   {
     "name": "Autonomous Drone",
     "type": "Robotics",
     "status": "Research and Learning",
-    "year": "2026"
+    "year": "2026",
+    "image": "None"
   },
   {
     "name": "Solar Energy System + Powerbank",
     "type": "IoT",
     "status": "pending",
-    "year": "2026"
+    "year": "2026",
+    "image": "None"
+  },
+  {
+    "name": "Smart Plant Monitoring ",
+    "type": "IoT",
+    "status": "Completed",
+    "year": "2023-2024",
+    "image": "assets/projects/monipad.jpg"
   }
-  
 ]

@@ -42,7 +42,9 @@
 
 .cloud-left {
   left: 0; /* Menempel ke sisi kiri layar */
-  top: 120px; /* Jarak dari atas */
+  top: 500px; /* Jarak dari atas */
+  transform: translateX(-100%) scaleX(-1);
+  scale: 2;
 }
 
 .cloud-right {
@@ -51,7 +53,7 @@
 }
 
 .sky-overlay {
-  position: absolute;
+  position: absolute; /* Posisi bebas untuk menutupi seluruh area sky */
   width: 100%;
   height: 100%;
   background: radial-gradient(
