@@ -11,8 +11,8 @@
 .logo a{
   font-size: 22px; /* Ukuran teks logo */
   font-weight: bold; /* Membuat teks lebih tegas */
-  color: #ffffff;
-  text-decoration: none;
+  color: white; /* Warna teks putih */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
 }
 
 .nav-menu {
