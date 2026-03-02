@@ -8,9 +8,11 @@
   z-index: 1000; /* Prioritas layer tinggi agar tidak tertutup elemen lain */
 }
 
-.logo {
+.logo a{
   font-size: 22px; /* Ukuran teks logo */
   font-weight: bold; /* Membuat teks lebih tegas */
+  collor: #ffffff;
+  text-decoration: none;
 }
 
 .nav-menu {
